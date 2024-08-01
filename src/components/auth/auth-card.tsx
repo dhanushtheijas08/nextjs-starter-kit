@@ -25,7 +25,7 @@ const AuthCard = ({
 }: AuthCardProps) => {
   return (
     <div>
-      <Card className="mx-auto w-[430px]">
+      <Card className="mx-auto w-[480px] border-none">
         <CardHeader>
           <CardTitle className="text-2xl text-center">{heading}</CardTitle>
           {description && <CardDescription>{description}</CardDescription>}
