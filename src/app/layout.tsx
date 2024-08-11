@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Inter as FontSans } from "next/font/google";
+import { Inter as FontSans, League_Spartan } from "next/font/google";
 import { cn } from "@/lib/utils";
 import "./globals.css";
 
-const fontSans = FontSans({
+const leagueSpartan = League_Spartan({
   subsets: ["latin"],
-  variable: "--font-sans",
+  variable: "--font-spartan",
 });
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn("font-sans antialiased", fontSans.variable)}>
+      <body className={cn("font-sans antialiased", leagueSpartan.variable)}>
         {children}
       </body>
     </html>
